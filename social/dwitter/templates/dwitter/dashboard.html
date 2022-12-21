@@ -1,0 +1,79 @@
+<!-- dwitter/templates/dwitter/dashboard.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static%}
+<div class="column">
+    {% for dweet in dweets %}
+        <div class="box" id="{{dweet.id}}">
+            <div class="profile_pic" style="width:fit-content">
+                   <a href="{% url 'dwitter:profile' dweet.user.profile.id %}"><img src="{% static dweet.user.profile.img %}" alt="" width="40px" height="40px"></a> 
+                    <span>{{ dweet.user.username }}</span>
+            </div>
+            <div class="dweet_body">
+                <span>{{dweet.body}}</span>
+                <!-- <span class="is-small has-text-grey-light">
+                ({{ dweet.created_at }} by {{ dweet.user.username }})
+                </span> -->
+            </div>
+            <div>
+                <span class="view-span" id="{{dweet.id}}"><span>View </span><i class="fa fa-eye" aria-hidden="true"></i></span>
+            </div>
+            <div class="unfocused alter">
+                <div class="add-comment">
+                    <form action="add_comment/" method="post">
+                        {% csrf_token %}
+                        <!-- <input type="text" name="dweet" value="{{dweet.id}}"> -->
+                        <input type="text" style="display: none;" name="dweet" value="{{dweet.id}}">
+                        <input type="text" name="comment-body" placeholder="Write a Comment">
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
+                {% for c in dweet.dweets.all %}
+                <div class="comment">
+                    <span>{{c.user.username}}</span>
+                    <span>{{c.body}}</span>
+                    <span class="is-small has-text-grey-light">{{c.created_at}}</span>
+                </div>
+                {% empty %}
+                <p>No Comments Yet</p>
+                {% endfor %}
+            </div>
+        </div>
+
+    {% endfor %}
+    
+</div>
+<div class="column is-one-third">
+    <div class="block">
+        <a href="{% url 'dwitter:profile_list' %} ">
+        <button class="button is-dark is-outlined is-fullwidth">
+        All Profiles
+        </button>
+        </a>
+    </div>
+    <div class="block">
+        <a href="{% url 'dwitter:profile' request.user.profile.id %} ">
+        <button class="button is-success is-light is-outlined is-fullwidth">
+        My Profile
+        </button>
+        </a>
+    </div>
+    <div class="block">
+        <div class="block">
+            <h2 class="title is-2">Add a Dweet</p>
+        </div>
+        <div class="block">
+            <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="button is-success is-fullwidth is-medium mt-5"
+            type="submit">Dweet
+            </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+    

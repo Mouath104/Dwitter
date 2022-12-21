@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Include the Bulma CSS framework for styling -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+{%  load static %}
+<link rel="icon" type="image/x-icon" href="{% static 'imgs/211-2112351_green-twitter-icon.png' %}">
+<link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'main.css' %}">
+<title>Dwitter</title>
+</head>
+<body>
+    <section class="hero is-small is-success mb-4">
+        <div class="hero-body fl">
+            <div>
+                <img src="{% static '211-2112351_green-twitter-icon.png' %}">
+                <div>
+                    <a href="http://127.0.0.1:8000/">
+                        <h1 class="title is-1">Dwitter</h1>
+                    </a>
+                    <p class="subtitle is-4">
+                    Not Twitter
+                    </p>
+                </div>
+            </div>
+            <div class="logout">
+                <a href="http://127.0.0.1:8000/user_logout"><span>Log out </span><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="columns">
+        {% block content %}
+        {% endblock content %}
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="https://www.facebook.com/moath.mubaslat/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/mouath-almobaslat-89a41a233/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github" target="_blank"></i></a>
+        </div>
+
+        <div class="row">
+        Dwitter Copyright © 2022 Dwitter - All rights reserved
+        </div>
+        <div class="row">
+            Made with ♥ by Mouath
+            </div>
+        </div>
+        </footer>
+    {% load static %}
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
