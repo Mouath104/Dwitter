@@ -18,3 +18,12 @@ JavaScript: A programming language used to create dynamic and interactive user i
 # How it looks like:
 ## you can view the project in this Link
 https://www.linkedin.com/feed/update/urn:li:activity:7011078600284114944/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7011078600284114944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+# Credentials:
+* user1 : Moath | pass: 104
+* user2 : Ahmad | pass: 104
+
+# Activate the Environment:
+myenv/scripts/activate
+
+
