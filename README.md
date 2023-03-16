@@ -16,8 +16,7 @@ This app was built using the following technologies:
 * JavaScript: A programming language used to create dynamic and interactive user interfaces.
 
 # Demo:
-## you can view the project in this Link
-[LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7011078600284114944/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7011078600284114944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29).
+You can view the project in this Link [LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7011078600284114944/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7011078600284114944%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29).
 
 # Credentials:
 * user1 : Moath | pass: 104
