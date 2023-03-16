@@ -2,11 +2,11 @@
 This is a social web app made with Django that allows users to view and interact with their friends' posts.
 
 # Features
-Responsive design: The app is designed to be mobile-friendly and accessible from any device.
-Friends' posts: Users can view posts from their friends on the app's home page.
-Following: Users can choose to follow their friends and view their posts exclusively.
-Commenting: Users can comment on their friends' posts if they are following them.
-Posting: Users can create and post their own updates for their friends to see.
+-Responsive design: The app is designed to be mobile-friendly and accessible from any device.
+-Friends' posts: Users can view posts from their friends on the app's home page.
+-Following: Users can choose to follow their friends and view their posts exclusively.
+-Commenting: Users can comment on their friends' posts if they are following them.
+-Posting: Users can create and post their own updates for their friends to see.
 
 # Technologies Used
 This app was built using the following technologies:
