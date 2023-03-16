@@ -11,9 +11,9 @@ This is a social web app made with Django that allows users to view and interact
 # Technologies Used
 This app was built using the following technologies:
 
-Django: A Python web framework that provides a flexible and powerful way to build web applications.
-Bootstrap: A popular CSS framework that provides a responsive grid system and pre-built UI components.
-JavaScript: A programming language used to create dynamic and interactive user interfaces.
+* Django: A Python web framework that provides a flexible and powerful way to build web applications.
+* Bootstrap: A popular CSS framework that provides a responsive grid system and pre-built UI components.
+* JavaScript: A programming language used to create dynamic and interactive user interfaces.
 
 # How it looks like:
 ## you can view the project in this Link
